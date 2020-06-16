@@ -100,12 +100,14 @@ textarea {
 /* General Styles */
  
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
  
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ color: #e2e3ed;
+ text-align: left;
 }
  
 ul, 
@@ -121,6 +123,7 @@ a {
 h2 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.875em;
+ font-weight: 500;
 }
  
 h3, 
@@ -128,6 +131,7 @@ h4 {
  font-family: 'Poppins', sans-serif;
  font-size: 1.125em;
  margin: 20px 0;
+ font-weight: 500;
 }
  
 p {
@@ -162,6 +166,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header nav ul{
@@ -177,6 +182,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  font-weight: 700;
 }
 
 .header-divider{
@@ -201,11 +207,19 @@ header .content-wrapper{
   background-position: cover;*/
 }
 
+.hero h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+
 .newsletter{
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .features{
@@ -239,16 +253,19 @@ header .content-wrapper{
 
 .features p{
   margin:0;
+  text-align: center;
 }
 
 .reviews{
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3{
@@ -258,6 +275,7 @@ header .content-wrapper{
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -312,13 +330,15 @@ footer .contact{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
-.contact {
+.contact-section {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 /* ==========================================================================
@@ -329,6 +349,7 @@ footer .contact{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -341,10 +362,41 @@ footer .contact{
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+}
+
+.newsletter .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -443,6 +495,17 @@ footer .contact{
   max-width: 640px;
   margin: 100px 0;
 }
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
 /*Header*/
 
 header {
@@ -465,6 +528,14 @@ header nav ul {
 
 .header-divider {
  display: none;
+}
+
+/* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
 }
 
 /*Newsletter*/
@@ -512,9 +583,18 @@ footer .content-wrapper{
 }
 
 .footer-content {
-display:flex;
-justify-content: space-around;
-flex-direction: row;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  line-height: 1.285;
 }
 
 /* ==========================================================================
@@ -555,6 +635,13 @@ flex-direction: row;
 .faq h2 {
   width: 100%;
 }
+
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -562,6 +649,20 @@ flex-direction: row;
 
 .content-wrapper {
   max-width: 960px;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
 }
 
 .hero h1 {
@@ -615,6 +716,12 @@ flex-direction: row;
 
 .faq-content {
   flex-basis: 440px;
+}
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
 }
 
 }
