@@ -659,6 +659,10 @@ footer p {
   width: 45%;
 }
 
+.map figure {
+    padding-bottom: 45.5%; 
+}
+
 .contact-content {
   display: flex;
   justify-content: space-around;
@@ -760,6 +764,10 @@ p {
 /* ==========================================================================
    ABOUT Page- DESKTOP
    ========================================================================== */
+
+.map figure {
+  padding-bottom: 37.5%;
+}
 
 .mission h2,
 .contact .content-wrapper h2 {
