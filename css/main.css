@@ -273,7 +273,7 @@ header nav ul{
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .reviews{
@@ -299,27 +299,35 @@ footer {
 }
 
 footer .content-wrapper {
-    width: 55%;
-    margin: 50px 0;
+  width: 55%;
+  margin: 50px 0;
 }
 
 .footer-content {
-display:flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.social-icons i{
+  font-size: 1.3125em;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 footer p{
