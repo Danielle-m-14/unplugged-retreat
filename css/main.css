@@ -167,6 +167,7 @@ footer{
 
 header{
   padding: 15px 0;
+  max-height: 110px; 
 }
 
 header .content-wrapper {
@@ -188,7 +189,7 @@ header figure {
 .header-divider{
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
   background: #3a3a3a; 
 }
 
@@ -200,13 +201,13 @@ header nav {
   flex-flow: row wrap;
   font-weight: 700;
   font-size: 1.125em;
-  text-transform: uppercase;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 .hero{
@@ -215,7 +216,7 @@ header nav ul{
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
-  min-height: 800px;
+  min-height: 500px;
 }
 
 .hero h1 {
@@ -248,6 +249,7 @@ header nav ul{
   width: 90%;
   display:flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .features h2 {
@@ -283,6 +285,10 @@ header nav ul{
   background-color: #2a423a;
 }
 
+.reviews .content-wrapper{
+  margin: 25px 0 44px 0;
+}
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -294,30 +300,29 @@ header nav ul{
 }
 
 footer {
+  display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+footer p{
+  margin: 0;
 }
 
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+  max-height: 420px;
 }
 
-.footer-content {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+footer .contact{
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.social-icons i{
-  font-size: 1.3125em;
 }
 
 footer .social-icons p {
@@ -330,19 +335,8 @@ footer .social-icons p {
   height: 40px;
 }
 
-footer p{
-  margin: 0;
-}
-
-footer .contact{
-  margin-bottom: 50px;
-}
-
-footer .contact{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.social-icons i{
+  font-size: 1.3125em;
 }
 
 .copyright{
@@ -555,6 +549,7 @@ h3 {
 header {
   justify-content: space-around;
   padding: 33px 0;
+  max-height: 100px;
 } 
 
 header figure {
@@ -581,7 +576,11 @@ header nav ul {
 
 /* Hero Area */
 
-.hero-area h1 {
+.hero {
+  min-height:600px ;
+}
+
+.hero h1 {
   font-size: 3em;
   line-height: 1;
   margin: 0;
@@ -592,9 +591,12 @@ header nav ul {
 .newsletter .content-wrapper {
   display:flex;
   justify-content: space-between;
-  align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  margin: 40px 0;
+}
+
+.newsletter .form {
+  margin-top: 0;
 }
 
 .form-description,
@@ -611,16 +613,29 @@ header nav ul {
 /*Features*/
 
 .features article{
-  width: 40%;
+  width: 30%;
   margin: 30px 30px;
   display: flex;
   flex-direction: column;
 }
 
+.features .features-items{
+  display: flex;
+  justify-content: space-around;
+}
+
+.features .content-wrapper {
+  margin-top: 60px;
+}
 /*Reviews*/
 
-.reviews article{
-  width: 100%;
+.reviews{
+  min-height: 510px;
+}
+
+.reviews h2 {
+  max-width: 80%;
+  padding: 20px 0 0 0;
 }
 
 .reviews article {
@@ -628,11 +643,16 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .reviews figure,
 .review-paragraph {
   width: 48%;
+}
+
+.reviews h3 {
+  width: 100%;
 }
 
 /*Footer*/
@@ -649,6 +669,10 @@ footer .content-wrapper{
   flex-direction: row;
 }
 
+footer .contact{
+  margin-bottom: 0;
+}
+
 footer h4 {
   font-size: 1.5em;
   margin-bottom: 40px;
@@ -658,6 +682,14 @@ footer p {
   line-height: 1.285;
 }
 
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+  }
+
+ footer .copyright {
+    width: 100%;
+  }
 /* ==========================================================================
    About Page-Tablet
    ========================================================================== */
@@ -713,9 +745,12 @@ footer p {
 /*DESKTOP styles here*/
 
 header {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
+header img {
+  font-size: 3em;
+}
 .content-wrapper {
   max-width: 960px;
 }
@@ -737,6 +772,7 @@ p {
 .hero h1 {
   font-size: 3.75em;
   width: 80%;
+  padding-bottom: 50px;
 }
 
 .newsletter .content-wrapper {
@@ -749,7 +785,7 @@ p {
 }
 
 .features h2 {
-  width: 71%;
+  width: 90%;
 }
 
 .features article {
@@ -761,8 +797,8 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.review-paragraph {
-  width: 40%;
+.reviews h3 {
+  width: 70%;
 }
 
 .reviews h2 {
@@ -771,8 +807,14 @@ p {
 
 .reviews figure,
 .review-paragraph {
-    width: 48%;
+    width: 45%;
+    padding: 20px;
   }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ==========================================================================
    ABOUT Page- DESKTOP
