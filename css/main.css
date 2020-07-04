@@ -698,6 +698,7 @@ footer .social-icons {
  footer .copyright {
     width: 100%;
   }
+  
 /* ==========================================================================
    About Page-Tablet
    ========================================================================== */
@@ -735,7 +736,9 @@ margin-bottom: 0;
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 /* ==========================================================================
